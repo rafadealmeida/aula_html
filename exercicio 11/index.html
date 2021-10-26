@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos ou resoluções</p>
+<picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-p.jpg" type="image/jpg">
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.jpg" type="image/jpg">
+    <img src="imagens/foto-g.jpg" alt="Imagem grande">
+</picture>
+
+<h2>Mais um teste com imagens</h2>
+<picture>
+    <source media="(max-width:750px )" srcset="imagens/pantera-p.jpg" type="image/jpg">
+    <source media="(max-width:1050px )" srcset="imagens/pantera-m.jpg" type="image/jpg">
+    <img src="imagens/pantera-g.jpg" alt="Pantera Negra">
+</picture>
+    <p>Caso queira baixar a imagem <a href="imagens/pantera-g-png.png" download="pantera-g-png.png" type="image/png" >clique aqui</a></p>
+
+     <h1>Reprodução de Áudio</h1>
+     <!--<p>Vamos aprender a reproduzir audios em HTML5</p>
+     <audio preload="auto" autoplay src="midia/superstar.mp3" controls></audio>-->
+    
+    <audio preload="metadata" loop controls>
+        <source src="midia/superstar.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não suporta esse tipo de vídeo,<a href="midia/superstar.mp3" download="superstar.mp3" 
+            type="audio/mpeg">
+            clique aqui</a> para baixa-lo.</p>
+    </audio>
+</body>
+</html>
